@@ -68,10 +68,10 @@ void getInputFromUser(int *player, int *x, int *y) {
     cout << "Player " << *player << " Enter Number  : ";
     cin >> input;
     if(input > SIZE*SIZE && input < 0) {
-        cout << "Enter Number betweeen : 1 - " << SIZE*SIZE << " : " ;
+        cout << endl << "Enter Number betweeen : 1 - " << SIZE*SIZE << " : " ;
         getInputFromUser(player, x, y);
     } else if (checkAlreadyPresent(input, x, y)){
-        cout << "Number "<<  input << " is already Present!!!" ;
+        cout << endl << endl << "Number "<<  input << " is already Present!!!" << endl;
         getInputFromUser(player, x, y);
     }
 }
